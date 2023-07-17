@@ -1,0 +1,41 @@
+WARNING:tensorflow:From /home/paul.duhe/.local/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+Training and evaluating DF model for closed-world scenario on Walkie-Talkie dataset
+Number of Epoch:  120
+Loading and preparing data for training, and evaluating the model
+Loading Walkie-Talkie dataset for closed-world scenario
+Data dimensions:
+X: Training data's shape :  (10434, 43378)
+y: Training data's shape :  (10434, 1)
+X: Validation data's shape :  (2236, 43378)
+y: Validation data's shape :  (2236, 1)
+X: Testing data's shape :  (2236, 43378)
+y: Testing data's shape :  (2236, 1)
+10434 train samples
+2236 validation samples
+2236 test samples
+Building and training DF model
+Model compiled
+Train on 10434 samples, validate on 2236 samples
+Epoch 1/120
+10434/10434 - 6968s - loss: 0.9967 - acc: 0.6123 - val_loss: 2.4260 - val_acc: 0.5036
+Epoch 2/120
+10434/10434 - 6899s - loss: 0.6238 - acc: 0.7408 - val_loss: 4.4364 - val_acc: 0.4580
+Epoch 3/120
+10434/10434 - 6891s - loss: 0.5321 - acc: 0.7753 - val_loss: 2.0448 - val_acc: 0.5635
+Epoch 4/120
+10434/10434 - 6888s - loss: 0.4542 - acc: 0.8090 - val_loss: 1.1266 - val_acc: 0.6252
+Epoch 5/120
+10434/10434 - 6894s - loss: 0.4194 - acc: 0.8306 - val_loss: 1.4668 - val_acc: 0.6047
+Epoch 6/120
+10434/10434 - 6891s - loss: 0.3837 - acc: 0.8393 - val_loss: 0.3998 - val_acc: 0.8363
+Epoch 7/120
+10434/10434 - 6904s - loss: 0.3692 - acc: 0.8482 - val_loss: 2.0913 - val_acc: 0.5353
+Epoch 8/120
+10434/10434 - 6909s - loss: 0.3550 - acc: 0.8538 - val_loss: 0.3200 - val_acc: 0.8708
+Epoch 9/120
+10434/10434 - 6931s - loss: 0.3357 - acc: 0.8625 - val_loss: 0.4018 - val_acc: 0.8247
+Epoch 10/120
+10434/10434 - 6919s - loss: 0.3179 - acc: 0.8678 - val_loss: 1.0076 - val_acc: 0.7147

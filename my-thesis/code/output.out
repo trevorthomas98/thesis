@@ -1,0 +1,240 @@
+Found data at:  /home/paul.duhe/thesis/small_thesis_project/data/
+genre started
+genre done
+genre started
+genre done
+genre started
+genre done
+genre started
+genre done
+Length of df:  136
+PRINTING GENRE:  1
+        genre  v_id last_packet_time   t0  ...  d23515  d23516  d23517  d23518
+row_85      1     2       135.948924  0.0  ...     NaN     NaN     NaN     NaN
+row_86      1     5       117.209794  0.0  ...     NaN     NaN     NaN     NaN
+row_87      1     5       115.644276  0.0  ...     NaN     NaN     NaN     NaN
+row_88      1     7       172.577426  0.0  ...     NaN     NaN     NaN     NaN
+row_89      1     8       177.255266  0.0  ...     NaN     NaN     NaN     NaN
+row_90      1     6       432.213289  0.0  ...   -60.0   597.0   -60.0   362.0
+row_91      1     4       162.716217  0.0  ...     NaN     NaN     NaN     NaN
+row_92      1     1       159.954112  0.0  ...     NaN     NaN     NaN     NaN
+row_93      1     0       124.146305  0.0  ...     NaN     NaN     NaN     NaN
+row_94      1     2       133.064949  0.0  ...     NaN     NaN     NaN     NaN
+row_95      1     2       133.363812  0.0  ...     NaN     NaN     NaN     NaN
+row_96      1     3       132.388930  0.0  ...     NaN     NaN     NaN     NaN
+row_97      1     6       422.025217  0.0  ...     NaN     NaN     NaN     NaN
+row_98      1     6       417.990829  0.0  ...     NaN     NaN     NaN     NaN
+row_99      1     8       175.009919  0.0  ...     NaN     NaN     NaN     NaN
+row_100     1     8       184.114950  0.0  ...     NaN     NaN     NaN     NaN
+row_101     1     5       119.288580  0.0  ...     NaN     NaN     NaN     NaN
+row_102     1     4       159.698873  0.0  ...     NaN     NaN     NaN     NaN
+row_103     1     5       115.049843  0.0  ...     NaN     NaN     NaN     NaN
+row_104     1     7       176.503839  0.0  ...     NaN     NaN     NaN     NaN
+row_105     1     1       167.113655  0.0  ...     NaN     NaN     NaN     NaN
+row_106     1     2       142.995121  0.0  ...     NaN     NaN     NaN     NaN
+row_107     1     3       136.177549  0.0  ...     NaN     NaN     NaN     NaN
+row_108     1     3       119.645879  0.0  ...     NaN     NaN     NaN     NaN
+row_109     1     7       255.271086  0.0  ...     NaN     NaN     NaN     NaN
+row_110     1     8       179.602667  0.0  ...     NaN     NaN     NaN     NaN
+row_111     1     6       418.141118  0.0  ...     NaN     NaN     NaN     NaN
+row_112     1     4       158.945352  0.0  ...     NaN     NaN     NaN     NaN
+row_113     1     3       118.735297  0.0  ...     NaN     NaN     NaN     NaN
+row_114     1     1       160.117277  0.0  ...     NaN     NaN     NaN     NaN
+row_115     1     1       159.353309  0.0  ...     NaN     NaN     NaN     NaN
+row_116     1     0       203.966911  0.0  ...     NaN     NaN     NaN     NaN
+row_117     1     3       120.099525  0.0  ...     NaN     NaN     NaN     NaN
+row_118     1     2       134.301824  0.0  ...     NaN     NaN     NaN     NaN
+row_119     1     2       136.165803  0.0  ...     NaN     NaN     NaN     NaN
+row_120     1     5       116.775832  0.0  ...     NaN     NaN     NaN     NaN
+row_121     1     8       177.169608  0.0  ...     NaN     NaN     NaN     NaN
+row_122     1     8       173.990676  0.0  ...     NaN     NaN     NaN     NaN
+row_123     1     6       419.219944  0.0  ...     NaN     NaN     NaN     NaN
+row_124     1     4       168.535689  0.0  ...     NaN     NaN     NaN     NaN
+row_125     1     4       158.907625  0.0  ...     NaN     NaN     NaN     NaN
+row_126     1     6       418.721985  0.0  ...     NaN     NaN     NaN     NaN
+row_127     1     7       175.781523  0.0  ...     NaN     NaN     NaN     NaN
+row_128     1     8       205.210623  0.0  ...     NaN     NaN     NaN     NaN
+row_129     1     0       130.259781  0.0  ...     NaN     NaN     NaN     NaN
+row_130     1     0       123.092197  0.0  ...     NaN     NaN     NaN     NaN
+row_131     1     1       158.394684  0.0  ...     NaN     NaN     NaN     NaN
+row_132     1     2       137.675447  0.0  ...     NaN     NaN     NaN     NaN
+row_133     1     3       121.220529  0.0  ...     NaN     NaN     NaN     NaN
+row_134     1     1       158.888449  0.0  ...     NaN     NaN     NaN     NaN
+row_135     1     5       114.653097  0.0  ...     NaN     NaN     NaN     NaN
+
+[51 rows x 47041 columns]
+PRINTING GENRE:  2
+       genre  v_id last_packet_time   t0  ...  d23515  d23516  d23517  d23518
+row_34     2     7       183.123473  0.0  ...     NaN     NaN     NaN     NaN
+row_35     2     6       222.188393  0.0  ...     NaN     NaN     NaN     NaN
+row_36     2     5       290.562569  0.0  ...     NaN     NaN     NaN     NaN
+row_37     2     3       222.093615  0.0  ...     NaN     NaN     NaN     NaN
+row_38     2     1       209.922916  0.0  ...     NaN     NaN     NaN     NaN
+row_39     2     3       187.988699  0.0  ...     NaN     NaN     NaN     NaN
+row_40     2     2       222.243102  0.0  ...     NaN     NaN     NaN     NaN
+row_41     2     2       119.418553  0.0  ...     NaN     NaN     NaN     NaN
+row_42     2     5       196.675323  0.0  ...     NaN     NaN     NaN     NaN
+row_43     2     7       185.749116  0.0  ...     NaN     NaN     NaN     NaN
+row_44     2     8       157.115312  0.0  ...     NaN     NaN     NaN     NaN
+row_45     2     6       203.953954  0.0  ...     NaN     NaN     NaN     NaN
+row_46     2     6       176.570670  0.0  ...     NaN     NaN     NaN     NaN
+row_47     2     6       163.876093  0.0  ...     NaN     NaN     NaN     NaN
+row_48     2     8       172.904463  0.0  ...     NaN     NaN     NaN     NaN
+row_49     2     7       221.071194  0.0  ...     NaN     NaN     NaN     NaN
+row_50     2     0       210.049491  0.0  ...     NaN     NaN     NaN     NaN
+row_51     2     1       215.270034  0.0  ...     NaN     NaN     NaN     NaN
+row_52     2     2       211.352351  0.0  ...     NaN     NaN     NaN     NaN
+row_53     2     3       193.252316  0.0  ...     NaN     NaN     NaN     NaN
+row_54     2     2       283.510974  0.0  ...     NaN     NaN     NaN     NaN
+row_55     2     3       190.915805  0.0  ...     NaN     NaN     NaN     NaN
+row_56     2     1       283.561566  0.0  ...     NaN     NaN     NaN     NaN
+row_57     2     6       212.469415  0.0  ...     NaN     NaN     NaN     NaN
+row_58     2     7       185.743369  0.0  ...     NaN     NaN     NaN     NaN
+row_59     2     1       221.415682  0.0  ...     NaN     NaN     NaN     NaN
+row_60     2     0       594.252823  0.0  ...     NaN     NaN     NaN     NaN
+row_61     2     3       188.639817  0.0  ...     NaN     NaN     NaN     NaN
+row_62     2     2       236.529478  0.0  ...     NaN     NaN     NaN     NaN
+row_63     2     5       208.640617  0.0  ...     NaN     NaN     NaN     NaN
+row_64     2     5       194.738962  0.0  ...     NaN     NaN     NaN     NaN
+row_65     2     8       159.296906  0.0  ...     NaN     NaN     NaN     NaN
+row_66     2     7       195.059641  0.0  ...     NaN     NaN     NaN     NaN
+row_67     2     7       185.335731  0.0  ...     NaN     NaN     NaN     NaN
+row_68     2     8       154.328565  0.0  ...     NaN     NaN     NaN     NaN
+row_69     2     6       201.807169  0.0  ...     NaN     NaN     NaN     NaN
+row_70     2     5       207.739990  0.0  ...     NaN     NaN     NaN     NaN
+row_71     2     3       232.868133  0.0  ...     NaN     NaN     NaN     NaN
+row_72     2     2       120.756832  0.0  ...     NaN     NaN     NaN     NaN
+row_73     2     1       204.606593  0.0  ...     NaN     NaN     NaN     NaN
+row_74     2     0       189.820979  0.0  ...     NaN     NaN     NaN     NaN
+row_75     2     0       181.647676  0.0  ...     NaN     NaN     NaN     NaN
+row_76     2     3       191.468571  0.0  ...     NaN     NaN     NaN     NaN
+row_77     2     1       208.238371  0.0  ...     NaN     NaN     NaN     NaN
+row_78     2     6       169.200224  0.0  ...     NaN     NaN     NaN     NaN
+row_79     2     8       156.825540  0.0  ...     NaN     NaN     NaN     NaN
+row_80     2     7       215.595611  0.0  ...     NaN     NaN     NaN     NaN
+row_81     2     6       168.098569  0.0  ...     NaN     NaN     NaN     NaN
+row_82     2     7       189.526579  0.0  ...     NaN     NaN     NaN     NaN
+row_83     2     0       183.402214  0.0  ...     NaN     NaN     NaN     NaN
+row_84     2     1       247.972602  0.0  ...     NaN     NaN     NaN     NaN
+
+[51 rows x 47041 columns]
+PRINTING GENRE:  3
+      genre  v_id last_packet_time   t0  ...  d23515  d23516  d23517  d23518
+row_0     3     1       120.527600  0.0  ...     NaN     NaN     NaN     NaN
+row_1     3     8       241.420428  0.0  ...     NaN     NaN     NaN     NaN
+row_2     3     1       183.395068  0.0  ...     NaN     NaN     NaN     NaN
+row_3     3     5       319.852319  0.0  ...     NaN     NaN     NaN     NaN
+row_4     3     3       276.572915  0.0  ...     NaN     NaN     NaN     NaN
+row_5     3     5       191.163691  0.0  ...     NaN     NaN     NaN     NaN
+
+[6 rows x 47041 columns]
+PRINTING GENRE:  4
+       genre  v_id last_packet_time   t0  ...  d23515  d23516  d23517  d23518
+row_6      4     4       182.815762  0.0  ...     NaN     NaN     NaN     NaN
+row_7      4     2       141.926803  0.0  ...     NaN     NaN     NaN     NaN
+row_8      4     1       126.676752  0.0  ...     NaN     NaN     NaN     NaN
+row_9      4     1       142.316502  0.0  ...     NaN     NaN     NaN     NaN
+row_10     4     1       115.086985  0.0  ...     NaN     NaN     NaN     NaN
+row_11     4     2       145.400565  0.0  ...     NaN     NaN     NaN     NaN
+row_12     4     5       133.832701  0.0  ...     NaN     NaN     NaN     NaN
+row_13     4     1       113.830398  0.0  ...     NaN     NaN     NaN     NaN
+row_14     4     2       139.834845  0.0  ...     NaN     NaN     NaN     NaN
+row_15     4     3       105.241559  0.0  ...     NaN     NaN     NaN     NaN
+row_16     4     2       141.412975  0.0  ...     NaN     NaN     NaN     NaN
+row_17     4     2       138.817223  0.0  ...     NaN     NaN     NaN     NaN
+row_18     4     3       104.125153  0.0  ...     NaN     NaN     NaN     NaN
+row_19     4     1       114.425976  0.0  ...     NaN     NaN     NaN     NaN
+row_20     4     7       100.071963  0.0  ...     NaN     NaN     NaN     NaN
+row_21     4     4       184.718281  0.0  ...     NaN     NaN     NaN     NaN
+row_22     4     5       133.031608  0.0  ...     NaN     NaN     NaN     NaN
+row_23     4     3       104.947412  0.0  ...     NaN     NaN     NaN     NaN
+row_24     4     5       131.179870  0.0  ...     NaN     NaN     NaN     NaN
+row_25     4     4       183.854177  0.0  ...     NaN     NaN     NaN     NaN
+row_26     4     8       107.854692  0.0  ...     NaN     NaN     NaN     NaN
+row_27     4     1       114.553664  0.0  ...     NaN     NaN     NaN     NaN
+row_28     4     2       140.308348  0.0  ...     NaN     NaN     NaN     NaN
+row_29     4     1       114.535602  0.0  ...     NaN     NaN     NaN     NaN
+row_30     4     5       131.993456  0.0  ...     NaN     NaN     NaN     NaN
+row_31     4     4       185.179345  0.0  ...     NaN     NaN     NaN     NaN
+row_32     4     1       113.733523  0.0  ...     NaN     NaN     NaN     NaN
+row_33     4     2       152.295237  0.0  ...     NaN     NaN     NaN     NaN
+
+[28 rows x 47041 columns]
+Dropping vid, length and last packet time
+X df is: 
+             d0      d1      d2      d3  ...  d23515  d23516  d23517  d23518
+row_0    -609.0  1123.0  -609.0   609.0  ...     NaN     NaN     NaN     NaN
+row_1     -66.0   609.0  -609.0    66.0  ...     NaN     NaN     NaN     NaN
+row_2     -66.0  -609.0  1123.0   -66.0  ...     NaN     NaN     NaN     NaN
+row_3     609.0   -66.0   609.0   -66.0  ...     NaN     NaN     NaN     NaN
+row_4    -609.0    66.0  -609.0    66.0  ...     NaN     NaN     NaN     NaN
+...         ...     ...     ...     ...  ...     ...     ...     ...     ...
+row_131  -597.0    54.0  -105.0    54.0  ...     NaN     NaN     NaN     NaN
+row_132  -597.0    54.0   597.0   -60.0  ...     NaN     NaN     NaN     NaN
+row_133 -1328.0   597.0   -60.0  1111.0  ...     NaN     NaN     NaN     NaN
+row_134   597.0   -60.0  -597.0   597.0  ...     NaN     NaN     NaN     NaN
+row_135   597.0   -60.0  -597.0  1111.0  ...     NaN     NaN     NaN     NaN
+
+[136 rows x 23519 columns]
+(136, 23519)
+y df is just genre
+        genre
+row_0       3
+row_1       3
+row_2       3
+row_3       3
+row_4       3
+...       ...
+row_131     1
+row_132     1
+row_133     1
+row_134     1
+row_135     1
+
+[136 rows x 1 columns]
+(136, 1)
+RESULT AFTER FIT AND SCALE! (X)
+        0         1         2         3      ...  23515  23516  23517  23518
+0    0.052263  1.136491 -0.495431  0.868868  ...    NaN    NaN    NaN    NaN
+1    0.294314  0.567928 -0.495431 -0.031897  ...    NaN    NaN    NaN    NaN
+2    0.294314 -0.779366  1.362757 -0.250867  ...    NaN    NaN    NaN    NaN
+3    0.595206 -0.178725  0.811309 -0.250867  ...    NaN    NaN    NaN    NaN
+4    0.052263 -0.032713 -0.495431 -0.031897  ...    NaN    NaN    NaN    NaN
+..        ...       ...       ...       ...  ...    ...    ...    ...    ...
+131  0.057612 -0.045987  0.045289 -0.051803  ...    NaN    NaN    NaN    NaN
+132  0.057612 -0.045987  0.798435 -0.240914  ...    NaN    NaN    NaN    NaN
+133 -0.268243  0.554654  0.093567  1.701619  ...    NaN    NaN    NaN    NaN
+134  0.589857 -0.172088 -0.482557  0.848962  ...    NaN    NaN    NaN    NaN
+135  0.589857 -0.172088 -0.482557  1.701619  ...    NaN    NaN    NaN    NaN
+
+[136 rows x 23519 columns]
+DATAFRAME AFTER CHANGING DIRECTIONS!
+X:
+     0      1      2      3      4      ...  23514  23515  23516  23517  23518
+0      1.0    1.0   -1.0    1.0    1.0  ...    NaN    NaN    NaN    NaN    NaN
+1      1.0    1.0   -1.0   -1.0    1.0  ...    NaN    NaN    NaN    NaN    NaN
+2      1.0   -1.0    1.0   -1.0   -1.0  ...    NaN    NaN    NaN    NaN    NaN
+3      1.0   -1.0    1.0   -1.0    1.0  ...    NaN    NaN    NaN    NaN    NaN
+4      1.0   -1.0   -1.0   -1.0   -1.0  ...    NaN    NaN    NaN    NaN    NaN
+..     ...    ...    ...    ...    ...  ...    ...    ...    ...    ...    ...
+131    1.0   -1.0    1.0   -1.0    1.0  ...    NaN    NaN    NaN    NaN    NaN
+132    1.0   -1.0    1.0   -1.0   -1.0  ...    NaN    NaN    NaN    NaN    NaN
+133   -1.0    1.0    1.0    1.0    1.0  ...    NaN    NaN    NaN    NaN    NaN
+134    1.0   -1.0   -1.0    1.0    1.0  ...    NaN    NaN    NaN    NaN    NaN
+135    1.0   -1.0   -1.0    1.0    1.0  ...    NaN    NaN    NaN    NaN    NaN
+
+[136 rows x 23519 columns]
+len of X before split 136
+length of X_train 95
+length of X_test 41
+length of y_train 95
+length of y_test 41
+length of X_valid 20
+length of X_test 21
+length of y_valid 20
+length of y_test 21
+/home/paul.duhe/thesis/small_thesis_project/code/df/dataset/ClosedWorld/NoDef/
+X_train (95, 23519)
+y_train (95, 1)
+X_valid (20, 23519)
+y_valid (20, 1)

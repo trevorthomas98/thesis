@@ -1,0 +1,143 @@
+2023-02-09 23:48:47.610615: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-09 23:48:47.785245: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-09 23:48:49.151144: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-02-09 23:48:49.151239: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-02-09 23:48:49.151252: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-02-09 23:49:20.985647: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+WARNING:tensorflow:AutoGraph could not transform <function Model.make_train_function.<locals>.train_function at 0x7f4b02fdc680> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: 'arguments' object has no attribute 'posonlyargs'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function Model.make_test_function.<locals>.test_function at 0x7f4a40c5d950> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: 'arguments' object has no attribute 'posonlyargs'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Training and evaluating DF model for closed-world scenario on non-defended dataset
+Number of Epoch:  60
+Loading and preparing data for training, and evaluating the model
+Loading non-defended dataset for closed-world scenario
+Data dimensions:
+X: Training data's shape :  (10434, 43378)
+y: Training data's shape :  (10434, 1)
+X: Validation data's shape :  (2236, 43378)
+y: Validation data's shape :  (2236, 1)
+X: Testing data's shape :  (2236, 43378)
+y: Testing data's shape :  (2236, 1)
+10434 train samples
+2236 validation samples
+2236 test samples
+Building and training DF model
+Model compiled
+Epoch 1/60
+327/327 - 4886s - loss: 0.9026 - accuracy: 0.6380 - val_loss: 1.1270 - val_accuracy: 0.6395
+Epoch 2/60
+327/327 - 4334s - loss: 0.5881 - accuracy: 0.7465 - val_loss: 2.0554 - val_accuracy: 0.5139
+Epoch 3/60
+327/327 - 4312s - loss: 0.4938 - accuracy: 0.7907 - val_loss: 3.2564 - val_accuracy: 0.4727
+Epoch 4/60
+327/327 - 4322s - loss: 0.4460 - accuracy: 0.8155 - val_loss: 8.1484 - val_accuracy: 0.4284
+Epoch 5/60
+327/327 - 4315s - loss: 0.3991 - accuracy: 0.8356 - val_loss: 0.5754 - val_accuracy: 0.7616
+Epoch 6/60
+327/327 - 4298s - loss: 0.3697 - accuracy: 0.8468 - val_loss: 1.8195 - val_accuracy: 0.5948
+Epoch 7/60
+327/327 - 4551s - loss: 0.3791 - accuracy: 0.8427 - val_loss: 0.7855 - val_accuracy: 0.7326
+Epoch 8/60
+327/327 - 4845s - loss: 0.3534 - accuracy: 0.8549 - val_loss: 0.8181 - val_accuracy: 0.7393
+Epoch 9/60
+327/327 - 4836s - loss: 0.3315 - accuracy: 0.8638 - val_loss: 1.7411 - val_accuracy: 0.6467
+Epoch 10/60
+327/327 - 4869s - loss: 0.3313 - accuracy: 0.8652 - val_loss: 1.0107 - val_accuracy: 0.7004
+Epoch 11/60
+327/327 - 4645s - loss: 0.3103 - accuracy: 0.8710 - val_loss: 0.7468 - val_accuracy: 0.7446
+Epoch 12/60
+327/327 - 4844s - loss: 0.3170 - accuracy: 0.8722 - val_loss: 6.5267 - val_accuracy: 0.4003
+Epoch 13/60
+327/327 - 4900s - loss: 0.3133 - accuracy: 0.8698 - val_loss: 0.6512 - val_accuracy: 0.7911
+Epoch 14/60
+327/327 - 4837s - loss: 0.3003 - accuracy: 0.8771 - val_loss: 1.6043 - val_accuracy: 0.6440
+Epoch 15/60
+327/327 - 4719s - loss: 0.2965 - accuracy: 0.8785 - val_loss: 2.0872 - val_accuracy: 0.6096
+Epoch 16/60
+327/327 - 4793s - loss: 0.3015 - accuracy: 0.8790 - val_loss: 2.8494 - val_accuracy: 0.5541
+Epoch 17/60
+327/327 - 4600s - loss: 0.2833 - accuracy: 0.8858 - val_loss: 2.0204 - val_accuracy: 0.5854
+Epoch 18/60
+327/327 - 4624s - loss: 0.2771 - accuracy: 0.8871 - val_loss: 1.1345 - val_accuracy: 0.7200
+Epoch 19/60
+327/327 - 4611s - loss: 0.2604 - accuracy: 0.8934 - val_loss: 1.0850 - val_accuracy: 0.7120
+Epoch 20/60
+327/327 - 4627s - loss: 0.2680 - accuracy: 0.8940 - val_loss: 1.1260 - val_accuracy: 0.7285
+Epoch 21/60
+327/327 - 4663s - loss: 0.2505 - accuracy: 0.8986 - val_loss: 2.4016 - val_accuracy: 0.6802
+Epoch 22/60
+327/327 - 4615s - loss: 0.2599 - accuracy: 0.8985 - val_loss: 3.0008 - val_accuracy: 0.5581
+Epoch 23/60
+327/327 - 4607s - loss: 0.2680 - accuracy: 0.8929 - val_loss: 0.4033 - val_accuracy: 0.8511
+Epoch 24/60
+327/327 - 4668s - loss: 0.2384 - accuracy: 0.9046 - val_loss: 0.5084 - val_accuracy: 0.8225
+Epoch 25/60
+327/327 - 4602s - loss: 0.2289 - accuracy: 0.9069 - val_loss: 0.3767 - val_accuracy: 0.8394
+Epoch 26/60
+327/327 - 4603s - loss: 0.2327 - accuracy: 0.9065 - val_loss: 0.8652 - val_accuracy: 0.7473
+Epoch 27/60
+327/327 - 4602s - loss: 0.2238 - accuracy: 0.9088 - val_loss: 0.4936 - val_accuracy: 0.8301
+Epoch 28/60
+327/327 - 4612s - loss: 0.2277 - accuracy: 0.9081 - val_loss: 1.8216 - val_accuracy: 0.6941
+Epoch 29/60
+327/327 - 4632s - loss: 0.2249 - accuracy: 0.9099 - val_loss: 3.6351 - val_accuracy: 0.5617
+Epoch 30/60
+327/327 - 4579s - loss: 0.2140 - accuracy: 0.9144 - val_loss: 0.8362 - val_accuracy: 0.7321
+Epoch 31/60
+327/327 - 4650s - loss: 0.2336 - accuracy: 0.9057 - val_loss: 1.6072 - val_accuracy: 0.6945
+Epoch 32/60
+327/327 - 4671s - loss: 0.2119 - accuracy: 0.9142 - val_loss: 4.6315 - val_accuracy: 0.5787
+Epoch 33/60
+327/327 - 4680s - loss: 0.2169 - accuracy: 0.9130 - val_loss: 0.4404 - val_accuracy: 0.8359
+Epoch 34/60
+327/327 - 4648s - loss: 0.2272 - accuracy: 0.9085 - val_loss: 0.4208 - val_accuracy: 0.8381
+Epoch 35/60
+327/327 - 4658s - loss: 0.2130 - accuracy: 0.9117 - val_loss: 0.4937 - val_accuracy: 0.8363
+Epoch 36/60
+327/327 - 4652s - loss: 0.2352 - accuracy: 0.9087 - val_loss: 1.1024 - val_accuracy: 0.7661
+Epoch 37/60
+327/327 - 4673s - loss: 0.3035 - accuracy: 0.8868 - val_loss: 0.5007 - val_accuracy: 0.8318
+Epoch 38/60
+327/327 - 4602s - loss: 0.2341 - accuracy: 0.9058 - val_loss: 0.7102 - val_accuracy: 0.7894
+Epoch 39/60
+327/327 - 4643s - loss: 0.2061 - accuracy: 0.9164 - val_loss: 0.7291 - val_accuracy: 0.7791
+Epoch 40/60
+327/327 - 4635s - loss: 0.1960 - accuracy: 0.9216 - val_loss: 0.6350 - val_accuracy: 0.8135
+Epoch 41/60
+327/327 - 4689s - loss: 0.1915 - accuracy: 0.9224 - val_loss: 0.8442 - val_accuracy: 0.7992
+Epoch 42/60
+327/327 - 4632s - loss: 0.1858 - accuracy: 0.9256 - val_loss: 1.2034 - val_accuracy: 0.7482
+Epoch 43/60
+327/327 - 4635s - loss: 0.1851 - accuracy: 0.9230 - val_loss: 1.9881 - val_accuracy: 0.6856
+Epoch 44/60
+327/327 - 4619s - loss: 0.1815 - accuracy: 0.9257 - val_loss: 1.7052 - val_accuracy: 0.7133
+Epoch 45/60
+327/327 - 4588s - loss: 0.1773 - accuracy: 0.9313 - val_loss: 1.0202 - val_accuracy: 0.7415
+Epoch 46/60
+327/327 - 4538s - loss: 0.1791 - accuracy: 0.9307 - val_loss: 1.4776 - val_accuracy: 0.7558
+Epoch 47/60
+327/327 - 4581s - loss: 0.1754 - accuracy: 0.9305 - val_loss: 2.4318 - val_accuracy: 0.6802
+Epoch 48/60
+327/327 - 4870s - loss: 0.1950 - accuracy: 0.9232 - val_loss: 0.9937 - val_accuracy: 0.7527
+Epoch 49/60
+327/327 - 5029s - loss: 0.1682 - accuracy: 0.9334 - val_loss: 0.7792 - val_accuracy: 0.8046
+Epoch 50/60
+327/327 - 5012s - loss: 0.1722 - accuracy: 0.9338 - val_loss: 0.4600 - val_accuracy: 0.8506
+Epoch 51/60
+327/327 - 5013s - loss: 0.1757 - accuracy: 0.9308 - val_loss: 0.6236 - val_accuracy: 0.8216
+Epoch 52/60
+327/327 - 5013s - loss: 0.1749 - accuracy: 0.9274 - val_loss: 0.7077 - val_accuracy: 0.7862
+Epoch 53/60
+327/327 - 5013s - loss: 0.1642 - accuracy: 0.9354 - val_loss: 1.7635 - val_accuracy: 0.7080
+Epoch 54/60
+327/327 - 5009s - loss: 0.1996 - accuracy: 0.9196 - val_loss: 0.7802 - val_accuracy: 0.8019
+Epoch 55/60
+327/327 - 5007s - loss: 0.1905 - accuracy: 0.9244 - val_loss: 4.2285 - val_accuracy: 0.6078
+/var/spool/slurm/job45802704/slurm_script: line 18: 126754 Bus error               python3 /home/paul.duhe/thesis/new/small_thesis_project/code/df/src/ClosedWorld_DF_NoDef.py
