@@ -16,7 +16,7 @@
  
 
 #python3 /home/paul.duhe/thesis/new/small_thesis_project/code/df_script.py
-python3 /home/trevor.thomas/thesis/new/my-thesis/code/get_shortest.py
+python3 /home/trevor.thomas/thesis/my-thesis/code/get_shortest.py
 
 
 
