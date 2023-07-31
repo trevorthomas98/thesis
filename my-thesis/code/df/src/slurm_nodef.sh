@@ -15,6 +15,6 @@
 #/share/spack/gcc-7.2.0/miniconda3-4.5.12-gkh/condabin/conda activate tf-2.6
  
 
-python3 /home/trevor.thomas/thesis/new/my-thesis/code/df/src/ClosedWorld_DF_NoDef.py
+python3 /home/trevor.thomas/thesis/my-thesis/code/df/src/ClosedWorld_DF_NoDef.py
 
 
