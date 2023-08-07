@@ -22,3 +22,8 @@ rumbledf = pd.read_csv(rumblecsv_file_path)
 print("Rumble df.head is")
 print(Rumbledf.head)
 
+youtubedf.to_csv('youtubedata.csv', index=False)
+facebookdf.to_csv('facebookdata.csv', index=False)
+vimeodf.to_csv('vimeodata.csv', index=False)
+rumbledf.to_csv('rumbledata.csv', index=False)
+
