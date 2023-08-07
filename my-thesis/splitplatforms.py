@@ -1,9 +1,9 @@
 import pandas as pd
 
-youtubecsv_file_path = '/home/trevor.thomas/hayden_monitored_tor_youtube.csv'
-facebookcsv_file_path = '/home/trevor.thomas/hayden_monitored_tor_facebook.csv'
-vimeocsv_file_path = '/home/trevor.thomas/hayden_monitored_tor_vimeo.csv'
-rumblecsv_file_path = '/home/trevor.thomas/hayden_monitored_tor_rumble.csv'
+youtubecsv_file_path = '/data/timothy.walsh/hayden_monitored_tor_youtube.csv'
+facebookcsv_file_path = '/data/timothy.walsh/hayden_monitored_tor_facebook.csv'
+vimeocsv_file_path = '/data/timothy.walsh/hayden_monitored_tor_vimeo.csv'
+rumblecsv_file_path = '/data/timothy.walsh/hayden_monitored_tor_rumble.csv'
 
 # Read the CSV file into a pandas DataFrame
 youtubedf = pd.read_csv(youtubecsv_file_path)
