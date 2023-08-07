@@ -5,6 +5,7 @@ csv_file_path = '/home/trevor.thomas/df_monitored_tor.csv'
 
 # Read the CSV file into a pandas DataFrame
 df = pd.read_csv(csv_file_path)
+print(df.head)
 
 # Create separate dataframes for each hosting platform
 rumble_df = df[df['hosting_platform'] == 'rumble'].copy()
