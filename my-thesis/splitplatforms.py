@@ -1,29 +1,24 @@
 import pandas as pd
 
-# Replace 'your_file.csv' with the actual path to your CSV file
-csv_file_path = '/home/trevor.thomas/df_monitored_tor.csv'
+youtubecsv_file_path = '/home/trevor.thomas/hayden_monitored_tor_youtube.csv'
+facebookcsv_file_path = '/home/trevor.thomas/hayden_monitored_tor_facebook.csv'
+vimeocsv_file_path = '/home/trevor.thomas/hayden_monitored_tor_vimeo.csv'
+rumblecsv_file_path = '/home/trevor.thomas/hayden_monitored_tor_rumble.csv'
 
 # Read the CSV file into a pandas DataFrame
-df = pd.read_csv(csv_file_path)
-print(df.head)
+youtubedf = pd.read_csv(youtubecsv_file_path)
+print("Youtube df.head is")
+print(youtubedf.head)
 
-# Create separate dataframes for each hosting platform
-rumble_df = df[df['hosting_platform'] == 'rumble'].copy()
-youtube_df = df[df['hosting_platform'] == 'youtube'].copy()
-vimeo_df = df[df['hosting_platform'] == 'vimeo'].copy()
-facebook_df = df[df['hosting_platform'] == 'facebook'].copy()
+facebookdf = pd.read_csv(facebookcsv_file_path)
+print("Facebook df.head is")
+print(Facebookdf.head)
 
-# Now you have separate dataframes for each hosting platform.
-# You can access and manipulate the data in each dataframe as needed.
+vimeodf = pd.read_csv(vimeocsv_file_path)
+print("Vimeo df.head is")
+print(Vimeodf.head)
 
-# Example: Print the first 5 rows of the rumble dataframe
-print("Data for Rumble Hosting Platform:")
-print(rumble_df.head())
+rumbledf = pd.read_csv(rumblecsv_file_path)
+print("Rumble df.head is")
+print(Rumbledf.head)
 
-# Example: Save each dataframe to a separate CSV file
-rumble_df.to_csv('rumble_data.csv', index=False)
-youtube_df.to_csv('youtube_data.csv', index=False)
-vimeo_df.to_csv('vimeo_data.csv', index=False)
-facebook_df.to_csv('facebook_data.csv', index=False)
-
-# You can perform further data analysis or operations on each dataframe as needed.
