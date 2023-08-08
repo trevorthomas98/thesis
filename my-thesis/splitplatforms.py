@@ -6,7 +6,12 @@ youtubecsv_file_path = '/data/timothy.walsh/hayden_monitored_tor_youtube.csv'
 #rumblecsv_file_path = '/data/timothy.walsh/hayden_monitored_tor_rumble.csv'
 
 # Read the CSV file into a pandas DataFrame
-youtubedf = pd.read_csv(youtubecsv_file_path)
+chunk_size = 10000
+df = []
+for chunk in pd.read_csv(youtubecsv_file_path, chunksize=chunk_size):
+    df.append(chunk)
+youtubedf = pd.concat(df, ignore_index=True)
+#youtubedf = pd.read_csv(youtubecsv_file_path)
 print("Youtube df.head is")
 print(youtubedf.head)
 
