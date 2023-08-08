@@ -34,39 +34,39 @@ print(f"The DataFrame has {num_columns} columns.")
 videoid = 'video_id'  # Specify the new column name
 
 # Rename the 40007th column
-youtubedf.rename(columns={df.columns[40006]: videoid}, inplace=True)
+youtubedf.rename(columns={youtubedf.columns[40006]: videoid}, inplace=True)
 
 crawljob = 'crawl_identifier'  # Specify the new column name
 
 # Rename the 40006th column
-youtubedf.rename(columns={df.columns[40005]: crawljob}, inplace=True)
+youtubedf.rename(columns={youtubedf.columns[40005]: crawljob}, inplace=True)
 
 numpackets = 'num_of_packets'  # Specify the new column name
 
 # Rename the 40005th column
-youtubedf.rename(columns={df.columns[40004]: numpackets}, inplace=True)
+youtubedf.rename(columns={youtubedf.columns[40004]: numpackets}, inplace=True)
 
 genre = 'genre'  # Specify the new column name
 
 # Rename the 40004th column
-youtubedf.rename(columns={df.columns[40003]: genre}, inplace=True)
+youtubedf.rename(columns={youtubedf.columns[40003]: genre}, inplace=True)
 
 
 platform = 'platform'  # Specify the new column name
 
 # Rename the 40003th column
-youtubedf.rename(columns={df.columns[40002]: platform}, inplace=True)
+youtubedf.rename(columns={youtubedf.columns[40002]: platform}, inplace=True)
 
 
 entryrelay = 'entry_ip'  # Specify the new column name
 
 # Rename the 40002th column
-youtubedf.rename(columns={df.columns[40001]: entryrelay}, inplace=True)
+youtubedf.rename(columns={youtubedf.columns[40001]: entryrelay}, inplace=True)
 
 region = 'region'  # Specify the new column name
 
 # Rename the 40001th column
-youtubedf.rename(columns={df.columns[40000]: region}, inplace=True)
+youtubedf.rename(columns={youtubedf.columns[40000]: region}, inplace=True)
 
 # Print the DataFrame to see the results
 print(youtubedf)
