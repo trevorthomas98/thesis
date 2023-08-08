@@ -69,7 +69,7 @@ region = 'region'  # Specify the new column name
 youtubedf.rename(columns={df.columns[40000]: region}, inplace=True)
 
 # Print the DataFrame to see the results
-print(df)
+print(youtubedf)
 
 
 with open('youtube.pkl', 'wb') as handle:
