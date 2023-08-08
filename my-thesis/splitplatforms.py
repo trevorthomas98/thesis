@@ -1,4 +1,5 @@
 import pandas as pd
+import pickle
 
 youtubecsv_file_path = '/data/timothy.walsh/hayden_monitored_tor_youtube.csv'
 #facebookcsv_file_path = '/data/timothy.walsh/hayden_monitored_tor_facebook.csv'
@@ -26,8 +27,9 @@ print(youtubedf.head)
 #rumbledf = pd.read_csv(rumblecsv_file_path)
 #print("Rumble df.head is")
 #print(Rumbledf.head)
-
-with open('X_train_NoDef.pkl', 'wb') as handle:
+num_columns = youtubedf.shape[1]
+print(f"The DataFrame has {num_columns} columns.")
+with open('youtube.pkl', 'wb') as handle:
     pickle.dump(youtubedf)
 
 
