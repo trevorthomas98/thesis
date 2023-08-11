@@ -8,7 +8,9 @@ import os
 def learning(df):
 
 ### Drop v_id, length, last_packet_time and all "t" columns
-    df = df.loc[:, ~df.columns.str.startswith('t')]
+    pickle_file_path = '/home/trevor.thomas/thesis/my-thesis/youtubedf.pkl'
+    df = pd.read_pickle(pickle_file_path)
+    #df = df.loc[:, ~df.columns.str.startswith('t')]
 
     print("Dropping vid, length and last packet time")
     #X = df.drop(['v_id','length', 'last_packet_time'], axis=1)
