@@ -72,7 +72,7 @@ youtubedf.rename(columns={youtubedf.columns[40000]: region}, inplace=True)
 print(youtubedf)
 
 
-output_file_path = '/home/trevor.thomas/thesis/my-thesis' 
+output_file_path = '/home/trevor.thomas/thesis/my-thesis/youtubedf.pkl' 
 
 # Save the DataFrame to a pickle file
 youtubedf.to_pickle(output_file_path)
