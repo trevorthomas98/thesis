@@ -39,10 +39,13 @@ def learning(df):
     
     #y = df[['v_id']]
     y = df[['genre']]
+    
+    y = pd.DataFrame(data)
     merged_encoded_column = y.idxmax(axis=1)
     one_hot_encoded = pd.get_dummies(merged_encoded_column, prefix='genre')
 
     print(one_hot_encoded)
+    
     #y = pd.get_dummies(y, columns=['genre'])
 
     print("y df is just genre")
