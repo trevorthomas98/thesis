@@ -20,7 +20,7 @@ def learning(df):
     df = df.drop(['entry_ip'], axis=1)
     df = df.drop(['crawl_identifier'], axis=1)
     df = df.drop(['region'], axis=1)
-    df = pd.get_dummies(df, columns=['genre'])
+    #df = pd.get_dummies(df, columns=['genre'])
     X = df.drop(['genre'], axis=1)
 
     print(X.head())
@@ -39,6 +39,10 @@ def learning(df):
     
     #y = df[['v_id']]
     y = df[['genre']]
+    merged_encoded_column = y.idxmax(axis=1)
+    one_hot_encoded = pd.get_dummies(merged_encoded_column, prefix='genre')
+
+    print(one_hot_encoded)
     #y = pd.get_dummies(y, columns=['genre'])
 
     print("y df is just genre")
