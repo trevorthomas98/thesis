@@ -22,6 +22,7 @@ def learning(df):
     
     #y = df[['v_id']]
     y = df[['genre']]
+    y = pd.get_dummies(y, columns=['genre'])
 
     print("y df is just genre")
     print(y)
