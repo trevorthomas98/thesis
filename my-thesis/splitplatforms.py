@@ -70,10 +70,7 @@ youtubedf.rename(columns={youtubedf.columns[40000]: region}, inplace=True)
 
 # Print the DataFrame to see the results
 print(youtubedf)
-print(df['genre'].head())
-print(df['platform'].head())
-print(df['entry_ip'].head())
-print(df['region'].head())
+
 
 output_file_path = '/home/trevor.thomas/thesis/my-thesis' 
 
@@ -83,4 +80,9 @@ youtubedf.to_pickle(output_file_path)
 print("DataFrame saved to pickle file.")
 
 
+def main():
 
+
+    learning_5000.learning(youtubedf)
+
+main()
