@@ -20,8 +20,8 @@ def learning(df):
     df = df.drop(['entry_ip'], axis=1)
     df = df.drop(['crawl_identifier'], axis=1)
     df = df.drop(['region'], axis=1)
-    #df = df.drop(['genre'], axis=1)
-    X = df
+    X = df.drop(['genre'], axis=1)
+
     print(X.head())
 
 
