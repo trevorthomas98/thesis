@@ -14,6 +14,18 @@ def learning(df):
 
     print("Dropping vid, length and last packet time")
     #X = df.drop(['v_id','length', 'last_packet_time'], axis=1)
+    df = df.drop(['video_id'], axis=1)
+    df = df.drop(['num_of_packets'], axis=1)
+    df = df.drop(['platform'], axis=1)
+    df = df.drop(['entry_ip'], axis=1)
+    df = df.drop(['crawl_identifier'], axis=1)
+    df = df.drop(['region'], axis=1)
+    df = df.drop(['genre'], axis=1)
+    X = df
+
+
+
+    
     X = df.drop(['video_id', 'num_of_packets', 'platform' , 'entry_ip' , 'crawl_identifier' ,  'region' , 'genre'], axis=1)
 
     X.drop(df.iloc[:, :4000], inplace=True, axis=1)
