@@ -40,8 +40,8 @@ def learning(df):
     #y = df[['v_id']]
     y = df[['genre']]
     
-    y = pd.DataFrame(data)
-    merged_encoded_column = y.idxmax(axis=1)
+    test = pd.DataFrame(y)
+    merged_encoded_column = test.idxmax(axis=1)
     one_hot_encoded = pd.get_dummies(merged_encoded_column, prefix='genre')
 
     print(one_hot_encoded)
