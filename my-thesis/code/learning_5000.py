@@ -61,7 +61,7 @@ def learning(df):
     # Display the resulting DataFrame
     print("y is",y)
     
-    
+    y = y.drop(['genre'], axis=1)    
     #y = pd.get_dummies(y, columns=['genre'])
 
     print("y df is just genre")
