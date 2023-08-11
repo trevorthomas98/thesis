@@ -59,9 +59,9 @@ BATCH_SIZE = 32 # Batch size / recommended no larger than 32
 
 VERBOSE = 2 # Output display mode
 
-#LENGTH = 5000 # Packet sequence length
-LENGTH = 23519 # Packet sequence length
-LENGTH = 43378 # Packet sequence length
+LENGTH = 5000 # Packet sequence length
+#LENGTH = 23519 # Packet sequence length
+#LENGTH = 43378 # Packet sequence length
 
 #OPTIMIZER = Adamax(lr=0.002, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0) # Optimizer
 
