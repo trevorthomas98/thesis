@@ -37,7 +37,7 @@ def learning(df):
     print(X.shape)
     
     #y = df[['v_id']]
-    y = df['genre']
+    y = df[['genre']]
 
     print("y df is just genre")
     print(y)
