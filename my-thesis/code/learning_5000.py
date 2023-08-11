@@ -21,7 +21,7 @@ def learning(df):
     df = df.drop(['crawl_identifier'], axis=1)
     df = df.drop(['region'], axis=1)
     df = pd.get_dummies(df, columns=['genre'])
-    print(X.head())
+    print(df.head())
     X = df.drop(['genre'], axis=1)
 
     print(X.head())
