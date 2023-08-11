@@ -84,6 +84,6 @@ print("DataFrame saved to pickle file.")
 def main():
 
 
-    learning_5000.learning(df)
+    learning_5000.learning(youtubedf)
 
 main()
