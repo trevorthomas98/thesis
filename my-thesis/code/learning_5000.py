@@ -22,7 +22,7 @@ def learning(df):
     df = df.drop(['region'], axis=1)
     #df = df.drop(['genre'], axis=1)
     X = df
-
+    print(X.head())
 
 
     
