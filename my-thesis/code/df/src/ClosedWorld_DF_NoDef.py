@@ -68,7 +68,7 @@ LENGTH = 5000 # Packet sequence length
 #NB_CLASSES = 95 # number of outputs = number of classes = video id = genres
 NB_CLASSES = 6 # number of outputs = number of classes = video id = genres
 
-INPUT_SHAPE = (LENGTH,6)
+INPUT_SHAPE = (LENGTH,1)
 
 
 # Data: shuffled and split between train and test sets
