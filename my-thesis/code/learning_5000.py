@@ -47,12 +47,12 @@ def learning(df):
 
     # Define a mapping of categorical values to numerical values
     genre_mapping = {
-        'instruction': 1,
-        'animated': 2,
-        'orchestra': 3,
-        'nature': 4,
-        'sports': 5,
-        'news': 6
+        'instruction': 0,
+        'animated': 1,
+        'orchestra': 2,
+        'nature': 3,
+        'sports': 4,
+        'news': 5
     }
 
     # Create a new column with the encoded values
