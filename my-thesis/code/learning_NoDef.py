@@ -8,11 +8,14 @@ import os
 def learning(df):
 
 ### Drop v_id, length, last_packet_time and all "t" columns
-    df = df.loc[:, ~df.columns.str.startswith('t')]
+    pickle_file_path = '/home/trevor.thomas/thesis/my-thesis/youtubedf.pkl'
+    df = pd.read_pickle(pickle_file_path)
+
+    #df = df.loc[:, ~df.columns.str.startswith('t')]
 
     print("Dropping vid, length and last packet time")
     #X = df.drop(['v_id','length', 'last_packet_time'], axis=1)
-    X = df.drop(['v_id', 'last_packet_time', 'genre'], axis=1)
+    X = df.drop(['video_id', 'num_of_packets', 'platform' , 'entry_ip' , 'crawl_identifier' ,  'region' , 'genre'], axis=1)
     print("X df is: ")
     print(X)
     print(X.shape)
@@ -62,8 +65,8 @@ def learning(df):
     print("length of y_test", len(y_test))
     
     no_def_dir = "/home/trevor.thomas/thesis/new/my-thesis/code/df/dataset/ClosedWorld/NoDef/"
-    walkie_talkie_dir = "/home/trevor.thomas/thesis/new/my-thesis/code/df/dataset/ClosedWorld/WalkieTalkie/"
-    wtf_pad_dir = "/home/trevor.thomas/thesis/new/my-thesis/code/df/dataset/ClosedWorld/WTFPAD/"
+    #walkie_talkie_dir = "/home/trevor.thomas/thesis/new/my-thesis/code/df/dataset/ClosedWorld/WalkieTalkie/"
+    #wtf_pad_dir = "/home/trevor.thomas/thesis/new/my-thesis/code/df/dataset/ClosedWorld/WTFPAD/"
     #no_def_dir = "/home/student/Documents/thesis/small_thesis_project/code/df/dataset/ClosedWorld/NoDef/"
     print(no_def_dir)
 # PICKLE DATA
@@ -75,17 +78,17 @@ def learning(df):
     with open(no_def_dir + 'y_train_NoDef.pkl', 'wb') as handle:
         pickle.dump(y_train, handle)
     #X_train_WalkieTalkie
-    with open(walkie_talkie_dir + 'X_train_WalkieTalkie.pkl', 'wb') as handle:
-        pickle.dump(X_train, handle)
+    #with open(walkie_talkie_dir + 'X_train_WalkieTalkie.pkl', 'wb') as handle:
+     #   pickle.dump(X_train, handle)
     #y_train_WalkieTalkie
-    with open(walkie_talkie_dir + 'y_train_WalkieTalkie.pkl', 'wb') as handle:
-        pickle.dump(y_train, handle)
+    #with open(walkie_talkie_dir + 'y_train_WalkieTalkie.pkl', 'wb') as handle:
+    #    pickle.dump(y_train, handle)
     #X_train_WTFPAD
-    with open(wtf_pad_dir + 'X_train_WTFPAD.pkl', 'wb') as handle:
-        pickle.dump(X_train, handle)
+    #with open(wtf_pad_dir + 'X_train_WTFPAD.pkl', 'wb') as handle:
+    #    pickle.dump(X_train, handle)
     #y_train_WTFPAD
-    with open(wtf_pad_dir + 'y_train_WTFPAD.pkl', 'wb') as handle:
-        pickle.dump(y_train, handle)
+    #with open(wtf_pad_dir + 'y_train_WTFPAD.pkl', 'wb') as handle:
+    #    pickle.dump(y_train, handle)
         
         
 ## Validation
@@ -96,17 +99,17 @@ def learning(df):
     with open(no_def_dir + 'y_valid_NoDef.pkl', 'wb') as handle:
         pickle.dump(y_valid, handle)
     #X_valid_WalkieTalkie
-    with open(walkie_talkie_dir + 'X_valid_WalkieTalkie.pkl', 'wb') as handle:
-        pickle.dump(X_valid, handle)
+    #with open(walkie_talkie_dir + 'X_valid_WalkieTalkie.pkl', 'wb') as handle:
+    #    pickle.dump(X_valid, handle)
     #y_valid_WalkieTalkie  
-    with open(walkie_talkie_dir + 'y_valid_WalkieTalkie.pkl', 'wb') as handle:
-        pickle.dump(y_valid, handle)
+    #with open(walkie_talkie_dir + 'y_valid_WalkieTalkie.pkl', 'wb') as handle:
+    #    pickle.dump(y_valid, handle)
     #X_valid_WTFPAD
-    with open(wtf_pad_dir + 'X_valid_WTFPAD.pkl', 'wb') as handle:
-        pickle.dump(X_valid, handle)
+    #with open(wtf_pad_dir + 'X_valid_WTFPAD.pkl', 'wb') as handle:
+    #    pickle.dump(X_valid, handle)
     #y_valid_WTFPAD
-    with open(wtf_pad_dir + 'y_valid_WTFPAD.pkl', 'wb') as handle:
-        pickle.dump(y_valid, handle)
+    #with open(wtf_pad_dir + 'y_valid_WTFPAD.pkl', 'wb') as handle:
+    #    pickle.dump(y_valid, handle)
         
         
         
@@ -118,17 +121,17 @@ def learning(df):
     with open(no_def_dir + 'y_test_NoDef.pkl', 'wb') as handle:
         pickle.dump(y_test, handle)
     #X_test_WalkieTalkie
-    with open(walkie_talkie_dir + 'X_test_WalkieTalkie.pkl', 'wb') as handle:
-        pickle.dump(X_test, handle)
+    #with open(walkie_talkie_dir + 'X_test_WalkieTalkie.pkl', 'wb') as handle:
+    #    pickle.dump(X_test, handle)
     #y_test_WalkieTalkie    
-    with open(walkie_talkie_dir + 'y_test_WalkieTalkie.pkl', 'wb') as handle:
-        pickle.dump(y_test, handle)
+    #with open(walkie_talkie_dir + 'y_test_WalkieTalkie.pkl', 'wb') as handle:
+    #    pickle.dump(y_test, handle)
     #X_test_WTFPAD
-    with open(wtf_pad_dir + 'X_test_WTFPAD.pkl', 'wb') as handle:
-        pickle.dump(X_test, handle)
+    #with open(wtf_pad_dir + 'X_test_WTFPAD.pkl', 'wb') as handle:
+    #    pickle.dump(X_test, handle)
     #y_test_WTFPAD    
-    with open(wtf_pad_dir + 'y_test_WTFPAD.pkl', 'wb') as handle:
-        pickle.dump(y_test, handle)
+    #with open(wtf_pad_dir + 'y_test_WTFPAD.pkl', 'wb') as handle:
+    #    pickle.dump(y_test, handle)
 
     
     
