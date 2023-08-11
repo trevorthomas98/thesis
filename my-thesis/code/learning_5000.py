@@ -12,7 +12,7 @@ def learning(df):
     df = pd.read_pickle(pickle_file_path)
     #df = df.loc[:, ~df.columns.str.startswith('t')]
 
-    print("Dropping vid, length and last packet time")
+    print("Dropping columns such as video id etc")
     #X = df.drop(['v_id','length', 'last_packet_time'], axis=1)
     df = df.drop(['video_id'], axis=1)
     df = df.drop(['num_of_packets'], axis=1)
