@@ -28,8 +28,8 @@ def learning(df):
     
     #X = df.drop(['video_id', 'num_of_packets', 'platform' , 'entry_ip' , 'crawl_identifier' ,  'region' , 'genre'], axis=1)
 
-    X.drop(df.iloc[:, :4000], inplace=True, axis=1)
-    X.drop(df.iloc[:, 9000:], inplace=True, axis=1)    
+    X.drop(df.iloc[:, :35000], inplace=True, axis=1)
+    #X.drop(df.iloc[:, 9000:], inplace=True, axis=1)    
   
     
     print("X df is: ")
