@@ -64,7 +64,7 @@ def learning(df):
     print("length of y_valid", len(y_valid))
     print("length of y_test", len(y_test))
     
-    no_def_dir = "/home/trevor.thomas/thesis/new/my-thesis/code/df/dataset/ClosedWorld/NoDef/"
+    no_def_dir = "/home/trevor.thomas/thesis/my-thesis/code/df/dataset/ClosedWorld/NoDef/"
     #walkie_talkie_dir = "/home/trevor.thomas/thesis/new/my-thesis/code/df/dataset/ClosedWorld/WalkieTalkie/"
     #wtf_pad_dir = "/home/trevor.thomas/thesis/new/my-thesis/code/df/dataset/ClosedWorld/WTFPAD/"
     #no_def_dir = "/home/student/Documents/thesis/small_thesis_project/code/df/dataset/ClosedWorld/NoDef/"
