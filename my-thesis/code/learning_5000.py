@@ -44,6 +44,22 @@ def learning(df):
     
     #y = df[['v_id']]
     y = df[['genre']]
+
+    # Define a mapping of categorical values to numerical values
+    genre_mapping = {
+        'instruction': 1,
+        'animated': 2,
+        'orchestra': 3,
+        'nature': 4,
+        'sports': 5,
+        'news': 6
+    }
+
+    # Create a new column with the encoded values
+    y['encoded_genre'] = y['genre'].map(genre_mapping)
+
+    # Display the resulting DataFrame
+    print("y is",y)
     
     
     #y = pd.get_dummies(y, columns=['genre'])
