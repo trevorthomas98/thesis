@@ -20,6 +20,7 @@ def learning(df):
     df = df.drop(['entry_ip'], axis=1)
     df = df.drop(['crawl_identifier'], axis=1)
     df = df.drop(['region'], axis=1)
+    df = pd.get_dummies(df, columns=['genre'])
     X = df.drop(['genre'], axis=1)
 
     print(X.head())
@@ -38,7 +39,7 @@ def learning(df):
     
     #y = df[['v_id']]
     y = df[['genre']]
-    y = pd.get_dummies(y, columns=['genre'])
+    #y = pd.get_dummies(y, columns=['genre'])
 
     print("y df is just genre")
     print(y)
