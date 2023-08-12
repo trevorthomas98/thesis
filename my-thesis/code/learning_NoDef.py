@@ -13,7 +13,7 @@ def learning(df):
 
     #df = df.loc[:, ~df.columns.str.startswith('t')]
 
- print("Dropping columns such as video id etc")
+    print("Dropping columns such as video id etc")
     #X = df.drop(['v_id','length', 'last_packet_time'], axis=1)
     df = df.drop(['video_id'], axis=1)
     df = df.drop(['num_of_packets'], axis=1)
