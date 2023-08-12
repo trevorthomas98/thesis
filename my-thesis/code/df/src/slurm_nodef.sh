@@ -5,7 +5,7 @@
 #SBATCH --time=10-00:00:00
                                                            
 #SBATCH -o /home/trevor.thomas/thesis/new/my-thesis/runs/closedworld_nodef_run.%j.out
-#SBATCH --partition=monaco
+#SBATCH --partition=barton
 #SBATCH --mem=128000
 #SBATCH --gres=gpu:1
 #SBATCH --mail-type=END              
