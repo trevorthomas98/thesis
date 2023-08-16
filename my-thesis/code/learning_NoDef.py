@@ -26,10 +26,10 @@ def learning(df):
     df = df.drop(['crawl_identifier'], axis=1)
     df = df.drop(['genre'], axis=1)
     #df = pd.get_dummies(df, columns=['genre'])
-    column_name = 'genre'  # Replace this with the actual column name
+    #column_name = 'genre'  # Replace this with the actual column name
 
     # Print the specified column
-    print(df[column_name])
+    #print(df[column_name])
     print(df.head())
     #X = df.drop(['genre'], axis=1)
     X = df.drop(['video_id'], axis=1)
