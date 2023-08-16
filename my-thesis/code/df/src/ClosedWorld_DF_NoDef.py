@@ -65,8 +65,8 @@ LENGTH = 40000 # Packet sequence length
 
 #OPTIMIZER = Adamax(lr=0.002, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0) # Optimizer
 
-#NB_CLASSES = 95 # number of outputs = number of classes = video id = genres
-NB_CLASSES = 6 # number of outputs = number of classes = video id = genres
+NB_CLASSES = 60 # number of outputs = number of classes = video id = genres
+#NB_CLASSES = 6 # number of outputs = number of classes = video id = genres
 
 INPUT_SHAPE = (LENGTH,1)
 
