@@ -9,16 +9,17 @@ def learning(df):
 
 ### Drop v_id, length, last_packet_time and all "t" columns
     #pickle_file_path = '/home/trevor.thomas/facebookdf.pkl'
-    pickle_file_path = '/home/trevor.thomas/rumbledf.pkl'
+    #pickle_file_path = '/home/trevor.thomas/rumbledf.pkl'
     #pickle_file_path = '/home/trevor.thomas/vimeodf.pkl'
-    #pickle_file_path = '/home/trevor.thomas/youtubedf.pkl'
+    pickle_file_path = '/home/trevor.thomas/youtubedf.pkl'
     df = pd.read_pickle(pickle_file_path)
 
     #df = df.loc[:, ~df.columns.str.startswith('t')]
 
     print("Dropping columns such as video id etc")
     #X = df.drop(['v_id','length', 'last_packet_time'], axis=1)
-    df = df.drop(['video_id'], axis=1)
+    #df = df.drop(['video_id'], axis=1)
+    df = df.drop(['region'], axis=1)
     df = df.drop(['num_of_packets'], axis=1)
     df = df.drop(['platform'], axis=1)
     df = df.drop(['entry_ip'], axis=1)
@@ -30,7 +31,8 @@ def learning(df):
     # Print the specified column
     print(df[column_name])
     print(df.head())
-    X = df.drop(['genre'], axis=1)
+    #X = df.drop(['genre'], axis=1)
+    X = df.drop(['video_id'], axis=1)
 
     print(X.head())
 
@@ -40,28 +42,31 @@ def learning(df):
     print(X.shape)
     
     #y = df[['v_id']]
-    y = df[['genre']]
+    y = df[['video_id']]
 
-    # Define a mapping of categorical values to numerical values
-    genre_mapping = {
-        'instruction': 0,
-        'animated': 1,
-        'orchestra': 2,
-        'nature': 3,
-        'sports': 4,
-        'news': 5
-    }
+    # Define a mapping of categorical values to numerical values for genre
+    # video id is already a numerical value
+    
+    #genre_mapping = {
+    #    'instruction': 0,
+    #    'animated': 1,
+    #    'orchestra': 2,
+    #    'nature': 3,
+    #    'sports': 4,
+    #    'news': 5
+    #}
 
-    # Create a new column with the encoded values
-    y['encoded_genre'] = y['genre'].map(genre_mapping)
+    # Create a new column with the encoded values for genre
+    #y['encoded_genre'] = y['genre'].map(genre_mapping)
 
     # Display the resulting DataFrame
     print("y is",y)
     
-    y = y.drop(['genre'], axis=1)    
-    #y = pd.get_dummies(y, columns=['genre'])
+    #y = y.drop(['genre'], axis=1)    
 
-    print("y df is just genre")
+
+    #print("y df is just genre")
+    print("y df is just video id")
     print(y)
     print(y.shape)
 
