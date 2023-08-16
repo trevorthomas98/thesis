@@ -24,7 +24,7 @@ def learning(df):
     df = df.drop(['platform'], axis=1)
     df = df.drop(['entry_ip'], axis=1)
     df = df.drop(['crawl_identifier'], axis=1)
-    df = df.drop(['region'], axis=1)
+    df = df.drop(['genre'], axis=1)
     #df = pd.get_dummies(df, columns=['genre'])
     column_name = 'genre'  # Replace this with the actual column name
 
