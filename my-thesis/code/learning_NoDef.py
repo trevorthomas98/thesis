@@ -364,6 +364,7 @@ def learning(df):
     #split X df and y df into 0-6 and 7-9 same for 10-16 and 17-19 etc
     #70% to train set, 30% to test set
     #try X_train = larger X df, X_test = smaller X df (after I split and then drop video id)
+    #print before dropping video id and then drop after and print again.
     #same for y
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
