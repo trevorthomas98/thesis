@@ -9,8 +9,8 @@ def learning(df):
 
 ### Drop v_id, length, last_packet_time and all "t" columns
     #pickle_file_path = '/home/trevor.thomas/facebookdf.pkl'
-    #pickle_file_path = '/home/trevor.thomas/rumbledf.pkl'
-    pickle_file_path = '/home/trevor.thomas/vimeodf.pkl'
+    pickle_file_path = '/home/trevor.thomas/rumbledf.pkl'
+    #pickle_file_path = '/home/trevor.thomas/vimeodf.pkl'
     #pickle_file_path = '/home/trevor.thomas/youtubedf.pkl'
     df = pd.read_pickle(pickle_file_path)
 
