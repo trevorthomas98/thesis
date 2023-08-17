@@ -59,7 +59,7 @@ def learning(df):
     # Create a new column with the encoded values for genre
     #y['encoded_genre'] = y['genre'].map(genre_mapping)
 
-    #video id mapping for youtube. 0-9 is already 0-9
+    #video id mapping for youtube
     # id_mapping = {
     #     '0': 0,
     #     '1': 1,
