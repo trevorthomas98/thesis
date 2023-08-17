@@ -61,6 +61,16 @@ def learning(df):
 
     #video id mapping for youtube. 0-9 is already 0-9
     id_mapping = {
+        '0': 0,
+        '1': 1,
+        '2': 2,
+        '3': 3,
+        '4': 4,
+        '5': 5,
+        '6': 6,
+        '7': 7,
+        '8': 8,
+        '9': 9,        
         '120': 10,
         '121': 11,
         '122': 12,
