@@ -59,10 +59,67 @@ def learning(df):
     # Create a new column with the encoded values for genre
     #y['encoded_genre'] = y['genre'].map(genre_mapping)
 
+    #video id mapping for youtube. 0-9 is already 0-9
+    id_mapping = {
+        '120': 10,
+        '121': 11,
+        '122': 12,
+        '123': 13,
+        '124': 14,
+        '125': 15,
+        '126': 16,
+        '127': 17,
+        '128': 18,
+        '129': 19,
+        '160': 20,
+        '161': 21,
+        '162': 22,
+        '163': 23,
+        '164': 24,
+        '165': 25,
+        '166': 26,
+        '167': 27,
+        '168': 28,
+        '169': 29,
+        '200': 30,
+        '201': 31,
+        '202': 32,
+        '203': 33,
+        '204': 34,
+        '205': 35,
+        '206': 36,
+        '207': 37,
+        '208': 38,
+        '209': 39,
+        '40': 40,
+        '41': 41,
+        '42': 42,
+        '43': 43,
+        '44': 44,
+        '45': 45,
+        '46': 46,
+        '47': 47,
+        '48': 48,
+        '49': 49,
+        '80': 50,
+        '81': 51,
+        '82': 52,
+        '83': 53,
+        '84': 54,
+        '85': 55,
+        '86': 56,
+        '87': 57,
+        '88': 58,
+        '89': 59,
+        
+    }
+
+    # Create a new column with the encoded values for genre
+    y['encoded_videoid'] = y['video_id'].map(id_mapping)
     # Display the resulting DataFrame
     print("y is",y)
     
-    #y = y.drop(['genre'], axis=1)    
+    y = y.drop(['video_id'], axis=1)    
 
 
     #print("y df is just genre")
