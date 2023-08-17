@@ -114,6 +114,11 @@ def learning(df):
         
     }
 
+
+    
+    y['video_id'] = y['video_id'].astype(str)
+
+    
     # Create a new column with the encoded values for genre
     y['encoded_videoid'] = y['video_id'].map(id_mapping)
     # Display the resulting DataFrame
