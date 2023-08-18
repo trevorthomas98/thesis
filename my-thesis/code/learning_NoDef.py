@@ -386,14 +386,15 @@ def learning(df):
                 break
     if not keep_row:
         rows_to_drop.append(index)
-    df = df.drop(rows_to_drop)
+    X = X.drop(rows_to_drop)
 
-new_df = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
+X_test = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
+X_train = X
 
-    print("New DataFrame:")
-    print(new_df)
+    print("X_test is:")
+    print(X_test)
     print("\nOriginal DataFrame after dropping selected rows:")
-    print(df)
+    print(X_train)
 
 
     
