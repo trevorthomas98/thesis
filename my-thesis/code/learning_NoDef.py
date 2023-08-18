@@ -366,7 +366,7 @@ def learning(df):
 
 
     X_train = X
-    X_train = X_train.drop(['video_id'], axis=1)
+    #X_train = X_train.drop(['video_id'], axis=1)
 
 
 
