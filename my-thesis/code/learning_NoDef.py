@@ -337,12 +337,15 @@ def learning(df):
     print("y is",y)
     print("X is",X)
     
-    #y = y.drop(['video_id'], axis=1)
+    #comment out the below line to verify y train/test is split properly.
+    y = y.drop(['video_id'], axis=1)
+
+    
     X = X.drop(['video_id'], axis=1)
 
 
-    #print("y df is just genre")
-    print("y df is just video id")
+    print("y df is just genre")
+    #print("y df is just video id")
     print(y)
     print(y.shape)
 
