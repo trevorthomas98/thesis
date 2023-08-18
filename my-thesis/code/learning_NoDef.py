@@ -32,7 +32,7 @@ def learning(df):
     #print(df[column_name])
     print(df.head())
     #X = df.drop(['genre'], axis=1)
-    X = df.drop(['video_id'], axis=1)
+    #X = df.drop(['video_id'], axis=1)
 
     print(X.head())
 
@@ -321,16 +321,18 @@ def learning(df):
     # }
 
 
-    
-    y['video_id'] = y['video_id'].astype(str)
 
+    y['video_id'] = y['video_id'].astype(str)
+    X['video_id'] = X['video_id'].astype(str)
     
     # Create a new column with the encoded values for genre
     y['encoded_videoid'] = y['video_id'].map(id_mapping)
+    X['encoded_videoid'] = X['video_id'].map(id_mapping)
     # Display the resulting DataFrame
     print("y is",y)
     
-    y = y.drop(['video_id'], axis=1)    
+    y = y.drop(['video_id'], axis=1)
+    X = df.drop(['video_id'], axis=1)
 
 
     #print("y df is just genre")
@@ -366,6 +368,21 @@ def learning(df):
     #try X_train = larger X df, X_test = smaller X df (after I split and then drop video id)
     #print before dropping video id and then drop after and print again.
     #same for y
+
+
+    ranges = [(7, 9), (17, 19), (27, 29), (37, 39), (47, 49), (57, 59)]
+
+   # Create a new DataFrame with selected ranges
+   selected_rows = []
+   for start, end in ranges:
+   selected_rows.extend(X[(X['encoded_videoid'] >= start) & (X['encoded_videoid'] <= end)].values.tolist())
+
+   new_df = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
+
+   print(new_df)
+
+
+    
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
