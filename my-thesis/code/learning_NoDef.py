@@ -385,8 +385,8 @@ def learning(df):
     print("\n now dropping encoded video id from xtest and xtrain. Xtest has the last three videos of each genre and Xtrain has the first 7:")
     # X_test = df.drop(['video_id'], axis=1)
     # X_train = df.drop(['video_id'], axis=1)
-    X_test = df.drop(['encoded_videoid'], axis=1)
-    X_train = df.drop(['encoded_videoid'], axis=1)
+    X_test = X_test.drop(['encoded_videoid'], axis=1)
+    X_train = X_train.drop(['encoded_videoid'], axis=1)
 
 ### Scale the features for xtrain
     pipeline = Pipeline([
