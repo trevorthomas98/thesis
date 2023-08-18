@@ -375,7 +375,7 @@ def learning(df):
    # Create a new DataFrame with selected ranges
     selected_rows = []
     for start, end in ranges:
-    selected_rows.extend(X[(X['encoded_videoid'] >= start) & (X['encoded_videoid'] <= end)].values.tolist())
+        selected_rows.extend(X[(X['encoded_videoid'] >= start) & (X['encoded_videoid'] <= end)].values.tolist())
 
     new_df = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
 
