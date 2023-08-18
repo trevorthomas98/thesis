@@ -354,12 +354,15 @@ def learning(df):
 
    # Create a new DataFrame with selected ranges
     selected_rows = X[X['encoded_videoid'].apply(lambda x: any(start <= x <= end for start, end in ranges))]
+    selected_rowsY = y[y['encoded_videoid'].apply(lambda x: any(start <= x <= end for start, end in ranges))]
 
     # Create a new DataFrame with selected rows
     X_test = selected_rows.copy()
+    y_test = selected_rowsY.copy()
 
     # Drop selected rows from the original DataFrame
     X = X.drop(selected_rows.index)
+    y_train = y.drop(selected_rowsY.index)
 
 
     X_train = X
@@ -373,10 +376,15 @@ def learning(df):
     print(X_train['encoded_videoid'])
     print(X_train)
 
+    print("y_test is:")
+    print(y_test)
+    print("y_train is:")
+    print(y_train)
+
 
     print("\n now dropping encoded video id from xtest and xtrain. Xtest has the last three videos of each genre and Xtrain has the first 7:")
-    X_test = df.drop(['video_id'], axis=1)
-    X_train = df.drop(['video_id'], axis=1)
+    # X_test = df.drop(['video_id'], axis=1)
+    # X_train = df.drop(['video_id'], axis=1)
     X_test = df.drop(['encoded_videoid'], axis=1)
     X_train = df.drop(['encoded_videoid'], axis=1)
 
