@@ -388,8 +388,8 @@ def learning(df):
         rows_to_drop.append(index)
     X = X.drop(rows_to_drop)
 
-X_test = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
-X_train = X
+    X_test = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
+    X_train = X
 
     print("X_test is:")
     print(X_test)
