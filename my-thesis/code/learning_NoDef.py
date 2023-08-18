@@ -374,22 +374,18 @@ def learning(df):
     ranges = [(7, 9), (17, 19), (27, 29), (37, 39), (47, 49), (57, 59)]
 
    # Create a new DataFrame with selected ranges
-    selected_rows = []
-    rows_to_drop = []
-    for index, row in df.iterrows():
-        encoded_videoid = row['encoded_videoid']
-        keep_row = False
-        for start, end in ranges:
-            if start <= encoded_videoid <= end:
-                selected_rows.append(row)
-                keep_row = True
-                break
-    if not keep_row:
-        rows_to_drop.append(index)
-    X = X.drop(rows_to_drop)
+    selected_rows = X[X['encoded_videoid'].apply(lambda x: any(start <= x <= end for start, end in ranges))]
 
-    X_test = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
+    # Create a new DataFrame with selected rows
+    X_test = selected_rows.copy()
+
+    # Drop selected rows from the original DataFrame
+    X = X.drop(selected_rows.index)
+
+
     X_train = X
+
+
 
     print("X_test is:")
     print(X_test)
@@ -397,9 +393,14 @@ def learning(df):
     print(X_train)
 
 
+    print("\n now dropping encoded video id from xtest and xtrain:")
+    X_test = df.drop(['video_id'], axis=1)
+    X_train = df.drop(['video_id'], axis=1)
+
+
     
     
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+    #X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
     # Should be 70/30 split of shape of X
     # Random State is used so samples remain same every run (train/test/split usually data in df)
