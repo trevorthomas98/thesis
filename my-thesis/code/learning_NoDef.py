@@ -255,7 +255,7 @@ def learning(df):
         
     # }
 
-    video id mapping for facebook
+    #video id mapping for facebook
     id_mapping = {
         '10': 0,
         '11': 1,
