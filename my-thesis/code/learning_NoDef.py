@@ -33,6 +33,7 @@ def learning(df):
     print(df.head())
     #X = df.drop(['genre'], axis=1)
     #X = df.drop(['video_id'], axis=1)
+    X= df
 
     print(X.head())
 
@@ -374,12 +375,25 @@ def learning(df):
 
    # Create a new DataFrame with selected ranges
     selected_rows = []
-    for start, end in ranges:
-        selected_rows.extend(X[(X['encoded_videoid'] >= start) & (X['encoded_videoid'] <= end)].values.tolist())
+    rows_to_drop = []
+    for index, row in df.iterrows():
+        encoded_videoid = row['encoded_videoid']
+        keep_row = False
+        for start, end in ranges:
+            if start <= encoded_videoid <= end:
+                selected_rows.append(row)
+                keep_row = True
+                break
+    if not keep_row:
+        rows_to_drop.append(index)
+    df = df.drop(rows_to_drop)
 
-    new_df = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
+new_df = pd.DataFrame(selected_rows, columns=['encoded_videoid'])
 
+    print("New DataFrame:")
     print(new_df)
+    print("\nOriginal DataFrame after dropping selected rows:")
+    print(df)
 
 
     
