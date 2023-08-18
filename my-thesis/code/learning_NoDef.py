@@ -31,9 +31,9 @@ def learning(df):
     # Print the specified column
     #print(df[column_name])
     print(df.head())
-    #X = df.drop(['genre'], axis=1)
+    X = df.drop(['genre'], axis=1)
     #X = df.drop(['video_id'], axis=1)
-    X= df
+    #X= df
 
     print(X.head())
 
