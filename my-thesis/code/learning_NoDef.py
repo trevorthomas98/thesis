@@ -331,6 +331,7 @@ def learning(df):
     X['encoded_videoid'] = X['video_id'].map(id_mapping)
     # Display the resulting DataFrame
     print("y is",y)
+    print("X is",X)
     
     y = y.drop(['video_id'], axis=1)
     X = df.drop(['video_id'], axis=1)
