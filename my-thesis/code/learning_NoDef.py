@@ -368,8 +368,10 @@ def learning(df):
 
     print("X_test is:")
     print(X_test['encoded_videoid'])
+    print(X_test)
     print("\nOriginal DataFrame after dropping selected rows:")
     print(X_train['encoded_videoid'])
+    print(X_train)
 
 
     print("\n now dropping encoded video id from xtest and xtrain:")
