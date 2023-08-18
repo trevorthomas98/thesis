@@ -378,27 +378,57 @@ def learning(df):
     X_test = df.drop(['video_id'], axis=1)
     X_train = df.drop(['video_id'], axis=1)
 
-### Scale the features
+### Scale the features for xtrain
     pipeline = Pipeline([
                     ('std_scaler', StandardScaler()),
                     ])
 
     df_scaled = pipeline.fit_transform(X)
-    X = pd.DataFrame(df_scaled)
+    X_train = pd.DataFrame(df_scaled)
     
     
-    print("RESULT AFTER FIT AND SCALE! (X)")
-    print(X)
+    print("RESULT AFTER FIT AND SCALE! (X_train)")
+    print(X_train)
+    
+    print("len of X_train before split", len(X_train))
+
+
+    ### Scale the features
+    pipeline = Pipeline([
+                    ('std_scaler', StandardScaler()),
+                    ])
+
+    df_scaled = pipeline.fit_transform(X_test)
+    X_test = pd.DataFrame(df_scaled)
+    
+    
+    print("RESULT AFTER FIT AND SCALE! (X_test)")
+    print(XX_test)
+    
+    print("len of X_test before split", len(X_test))
+
+
+    ### Scale the features
+    # pipeline = Pipeline([
+    #                 ('std_scaler', StandardScaler()),
+    #                 ])
+
+    # df_scaled = pipeline.fit_transform(X)
+    # X = pd.DataFrame(df_scaled)
+    
+    
+    # print("RESULT AFTER FIT AND SCALE! (X)")
+    # print(X)
     
     
 ### Change ALL directions columns to "+1 and -1"
-    #X[X<0] = -1
-    #X[X>0] = 1
+    # #X[X<0] = -1
+    # #X[X>0] = 1
     
-    print("DATAFRAME AFTER CHANGING DIRECTIONS!")
-    print("X:")
-    print(X)
-    print("len of X before split", len(X))
+    # print("DATAFRAME AFTER CHANGING DIRECTIONS!")
+    # print("X:")
+    # print(X)
+    # print("len of X before split", len(X))
 
 
 
