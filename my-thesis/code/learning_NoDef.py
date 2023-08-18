@@ -43,22 +43,26 @@ def learning(df):
     print(X.shape)
     
     #y = df[['v_id']]
-    y = df[['video_id']]
+    #y = df[['video_id']]
+    selected_dfs = ['genre', 'video_id']
+    y = df[selected_dfs]
+    print('Y is')
+    print(y)
 
     # Define a mapping of categorical values to numerical values for genre
     # video id is already a numerical value
     
-    #genre_mapping = {
-    #    'instruction': 0,
-    #    'animated': 1,
-    #    'orchestra': 2,
-    #    'nature': 3,
-    #    'sports': 4,
-    #    'news': 5
-    #}
+    genre_mapping = {
+       'instruction': 0,
+       'animated': 1,
+       'orchestra': 2,
+       'nature': 3,
+       'sports': 4,
+       'news': 5
+    }
 
     # Create a new column with the encoded values for genre
-    #y['encoded_genre'] = y['genre'].map(genre_mapping)
+    y['encoded_genre'] = y['genre'].map(genre_mapping)
 
     #video id mapping for youtube
     id_mapping = {
