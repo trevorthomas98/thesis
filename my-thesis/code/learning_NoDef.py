@@ -371,7 +371,10 @@ def learning(df):
 
     X_train = X
     #X_train = X_train.drop(['video_id'], axis=1)
-
+    y_train = y_train.drop(['genre'], axis=1)
+    y_train = y_train.drop(['encoded_videoid'], axis=1)
+    y_test = y_test.drop(['genre'], axis=1)
+    y_test = y_test.drop(['encoded_videoid'], axis=1)
 
 
     print("X_test is:")
