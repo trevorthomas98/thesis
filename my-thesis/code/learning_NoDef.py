@@ -407,6 +407,9 @@ def learning(df):
     
     print("len of X_train before split", len(X_train))
 
+    column_to_drop = 40000
+    X_train = X_train.drop(X_train.columns[column_to_drop], axis=1)
+
 
     ### Scale the features
     pipeline = Pipeline([
