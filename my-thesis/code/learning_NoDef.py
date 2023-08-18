@@ -387,6 +387,10 @@ def learning(df):
     # X_train = df.drop(['video_id'], axis=1)
     X_test = X_test.drop(['encoded_videoid'], axis=1)
     X_train = X_train.drop(['encoded_videoid'], axis=1)
+    print("X_test is:")
+    print(X_test.head())
+    print("X_train is:")
+    print(X_train.head())
 
 ### Scale the features for xtrain
     pipeline = Pipeline([
