@@ -337,7 +337,7 @@ def learning(df):
     print("y is",y)
     print("X is",X)
     
-    y = y.drop(['video_id'], axis=1)
+    #y = y.drop(['video_id'], axis=1)
     X = X.drop(['video_id'], axis=1)
 
 
