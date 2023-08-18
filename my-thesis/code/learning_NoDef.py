@@ -342,28 +342,6 @@ def learning(df):
     print(y)
     print(y.shape)
 
-### Scale the features
-    pipeline = Pipeline([
-                    ('std_scaler', StandardScaler()),
-                    ])
-
-    df_scaled = pipeline.fit_transform(X)
-    X = pd.DataFrame(df_scaled)
-    
-    
-    print("RESULT AFTER FIT AND SCALE! (X)")
-    print(X)
-    
-    
-### Change ALL directions columns to "+1 and -1"
-    #X[X<0] = -1
-    #X[X>0] = 1
-    
-    print("DATAFRAME AFTER CHANGING DIRECTIONS!")
-    print("X:")
-    print(X)
-    print("len of X before split", len(X))
-
 
     #split X df and y df into 0-6 and 7-9 same for 10-16 and 17-19 etc
     #70% to train set, 30% to test set
@@ -397,6 +375,29 @@ def learning(df):
     print("\n now dropping encoded video id from xtest and xtrain:")
     X_test = df.drop(['video_id'], axis=1)
     X_train = df.drop(['video_id'], axis=1)
+
+### Scale the features
+    pipeline = Pipeline([
+                    ('std_scaler', StandardScaler()),
+                    ])
+
+    df_scaled = pipeline.fit_transform(X)
+    X = pd.DataFrame(df_scaled)
+    
+    
+    print("RESULT AFTER FIT AND SCALE! (X)")
+    print(X)
+    
+    
+### Change ALL directions columns to "+1 and -1"
+    #X[X<0] = -1
+    #X[X>0] = 1
+    
+    print("DATAFRAME AFTER CHANGING DIRECTIONS!")
+    print("X:")
+    print(X)
+    print("len of X before split", len(X))
+
 
 
     
