@@ -357,7 +357,8 @@ def learning(df):
     #same for y
 
 
-    ranges = [(7, 9), (17, 19), (27, 29), (37, 39), (47, 49), (57, 59)]
+    #ranges = [(7, 9), (17, 19), (27, 29), (37, 39), (47, 49), (57, 59)]
+    ranges = [(0, 2), (10, 12), (20, 22), (30, 32), (40, 42), (50, 52)]
 
    # Create a new DataFrame with selected ranges
     selected_rows = X[X['encoded_videoid'].apply(lambda x: any(start <= x <= end for start, end in ranges))]
