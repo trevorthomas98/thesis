@@ -125,6 +125,7 @@ print("Testing accuracy:", score_test[1])
 
 y_pred = model.predict(X_valid)
 matrix = confusion_matrix(y_valid.argmax(axis=1), y_pred.argmax(axis=1))
+print(matrix)
 
 
 
