@@ -22,6 +22,8 @@ import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, Flatten
 from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+from sklearn.metrics import plot_confusion_matrix
 
 #from tensorflow.python.keras import backend as K
 from utility import LoadDataNoDefCW
@@ -126,6 +128,24 @@ print("Testing accuracy:", score_test[1])
 y_pred = model.predict(X_valid)
 matrix = confusion_matrix(y_valid.argmax(axis=1), y_pred.argmax(axis=1))
 print(matrix)
+
+
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import plot_confusion_matrix
+
+
+# Compute confusion matrix
+y_pred_labels = np.argmax(y_pred, axis=1)
+y_valid_labels = np.argmax(y_valid, axis=1)
+confusion_mat = confusion_matrix(y_valid_labels, y_pred_labels)
+
+# Plot confusion matrix
+fig, ax = plt.subplots()
+cm = plot_confusion_matrix(confusion_mat, display_labels=range(NB_CLASSES),
+                           cmap=plt.cm.Greens,
+                           ax=ax)
+ax.set_title('Confusion Matrix')
+plt.show()
 
 
 
