@@ -123,8 +123,8 @@ history = model.fit(X_train, y_train,
 score_test = model.evaluate(X_test, y_test, verbose=VERBOSE)
 print("Testing accuracy:", score_test[1])
 
-y_pred = model.predict(X_test)
-matrix = confusion_matrix(y_test.argmax(axis=1), y_pred.argmax(axis=1))
+y_pred = model.predict(X_valid)
+matrix = confusion_matrix(y_valid.argmax(axis=1), y_pred.argmax(axis=1))
 
 
 
