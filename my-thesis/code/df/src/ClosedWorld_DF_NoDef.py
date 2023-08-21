@@ -18,6 +18,10 @@
 #from keras.optimizers import Adamax
 #import numpy as np
 #import os
+import numpy as np
+from keras.models import Sequential
+from keras.layers import Dense, Conv2D, Flatten
+from sklearn.metrics import confusion_matrix
 
 #from tensorflow.python.keras import backend as K
 from utility import LoadDataNoDefCW
@@ -118,5 +122,10 @@ history = model.fit(X_train, y_train,
 # Start evaluating model with testing data
 score_test = model.evaluate(X_test, y_test, verbose=VERBOSE)
 print("Testing accuracy:", score_test[1])
+
+y_pred = model.predict(X_test)
+matrix = confusion_matrix(y_test.argmax(axis=1), y_pred.argmax(axis=1))
+
+
 
 
