@@ -12,5 +12,5 @@ print(df)
 sorted_df = df.sort_values(by=['num_of_packets'], ascending=True)
 
 print(sorted_df['num_of_packets'])
-print(sorted_df.head(150))
+print(sorted_df.head(80))
 
