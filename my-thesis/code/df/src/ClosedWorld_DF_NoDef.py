@@ -130,7 +130,8 @@ matrix = confusion_matrix(y_valid.argmax(axis=1), y_pred.argmax(axis=1))
 print(matrix)
 
 
-from sklearn.metrics import confusion_matrix, plot_confusion_matrix
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
 
 # ...
 
@@ -140,12 +141,12 @@ y_valid_labels = np.argmax(y_valid, axis=1)
 confusion_mat = confusion_matrix(y_valid_labels, y_pred_labels)
 
 # Plot confusion matrix
-fig, ax = plt.subplots()
-plot_confusion_matrix(model, X_valid, y_valid_labels,
-                      cmap=plt.cm.Greens,
-                      display_labels=range(NB_CLASSES),
-                      ax=ax)
-ax.set_title('Confusion Matrix')
+plt.figure(figsize=(8, 6))
+sns.heatmap(confusion_mat, annot=True, fmt='d', cmap='Blues', 
+            xticklabels=range(NB_CLASSES), yticklabels=range(NB_CLASSES))
+plt.title('Confusion Matrix')
+plt.xlabel('Predicted Labels')
+plt.ylabel('True Labels')
 plt.show()
 
 
