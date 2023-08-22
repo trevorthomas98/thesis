@@ -130,9 +130,9 @@ matrix = confusion_matrix(y_valid.argmax(axis=1), y_pred.argmax(axis=1))
 print(matrix)
 
 
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import plot_confusion_matrix
+from sklearn.metrics import confusion_matrix, plot_confusion_matrix
 
+# ...
 
 # Compute confusion matrix
 y_pred_labels = np.argmax(y_pred, axis=1)
@@ -141,9 +141,10 @@ confusion_mat = confusion_matrix(y_valid_labels, y_pred_labels)
 
 # Plot confusion matrix
 fig, ax = plt.subplots()
-cm = plot_confusion_matrix(confusion_mat, display_labels=range(NB_CLASSES),
-                           cmap=plt.cm.Greens,
-                           ax=ax)
+plot_confusion_matrix(model, X_valid, y_valid_labels,
+                      cmap=plt.cm.Greens,
+                      display_labels=range(NB_CLASSES),
+                      ax=ax)
 ax.set_title('Confusion Matrix')
 plt.show()
 
