@@ -150,7 +150,8 @@ plt.xticks(tick_marks, range(NB_CLASSES))
 plt.yticks(tick_marks, range(NB_CLASSES))
 plt.ylabel('True Label')
 plt.xlabel('Predicted Label')
-plt.show()
+plt.tight_layout()  # Ensures labels are not cut off
+plt.savefig('confusion_matrix.png')  # Save the plot as an image
 
 
 
