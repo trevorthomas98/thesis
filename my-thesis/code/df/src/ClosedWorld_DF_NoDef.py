@@ -47,7 +47,7 @@ description = "Training and evaluating DF model for closed-world scenario on non
 
 print (description)
 # Training the DF model
-NB_EPOCH = 2   # Number of training epoch
+NB_EPOCH = 120   # Number of training epoch
 print ("Number of Epoch: ", NB_EPOCH)
 
 
