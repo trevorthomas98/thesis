@@ -133,7 +133,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import confusion_matrix
 
-# ...
+# Define the category labels
+class_labels = {
+    0: 'instruction',
+    1: 'animated',
+    2: 'orchestra',
+    3: 'nature',
+    4: 'sports',
+    5: 'news'
+}
+
 
 # Compute confusion matrix
 y_pred_labels = np.argmax(y_pred, axis=1)
@@ -145,13 +154,17 @@ plt.figure(figsize=(8, 6))
 plt.imshow(confusion_mat, interpolation='nearest', cmap=plt.cm.Blues)
 plt.title('Confusion Matrix')
 plt.colorbar()
-tick_marks = np.arange(NB_CLASSES)
-plt.xticks(tick_marks, range(NB_CLASSES))
-plt.yticks(tick_marks, range(NB_CLASSES))
+
+# Set tick marks and labels
+tick_marks = np.arange(len(class_labels))
+plt.xticks(tick_marks, [class_labels[i] for i in tick_marks], rotation=45)
+plt.yticks(tick_marks, [class_labels[i] for i in tick_marks])
+
 plt.ylabel('True Label')
 plt.xlabel('Predicted Label')
-plt.tight_layout()  # Ensures labels are not cut off
-plt.savefig('confusion_matrix.png')  # Save the plot as an image
+plt.tight_layout()
+plt.savefig('confusion_matrix.png')
+
 
 
 
